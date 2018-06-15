@@ -39,6 +39,28 @@ public class Main {
         for (int i=0;i<arr.length;i++){
             arr[i].draw();
         }
+
+        Computer mycomp = new Computer();
+        mycomp.i3.start();
+        mycomp.kingston.start();
+
+
+        Car BMW=new Car();
+        BMW.setObem(4.0f,"BMW");
+
+        Car Mers = new Car();
+        Mers.setObem(1.3f,"mers");
+
+        new Computer(){
+          void superComp(){
+              this.i3.shutdown();
+              this.kingston.shutdown();
+          }
+        };
+
+        ShapeAbstr circle = new CircleAb();
+        circle.draw();
+
     }
 
 
